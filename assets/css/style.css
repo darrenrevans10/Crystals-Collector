@@ -1,0 +1,52 @@
+
+
+h1 {
+	font-size: 350%;
+	text-align: center;
+	font-family: 'Ruda', sans-serif;
+	font-weight: bold;
+}
+
+p {
+	font-size: 200%;
+	padding-left: 15px;
+	font-family: 'Karla', sans-serif;
+}
+
+span {
+	font-size: 200%;
+	padding-left: 15px;
+	font-family: 'Ruda', sans-serif;
+	font-weight: bold;
+}
+
+hr {
+	border-top: 2px solid black;
+}
+
+.container {
+	border-style: solid;
+    border-color: #4C4C4C;
+    border-width: 4px;
+}
+
+#scoreboard {
+	text-align: center;
+	font-size: 120%;
+}
+
+#randomNumber {
+	background-color: #4C4C4C;
+    color: #DCDCDC;
+    padding: 20px;
+}
+
+.wrapper {
+	background-color: #D7304C;
+	padding: 50px;
+} 
+
+.row {
+	background-color: #DCDCDC;
+	padding-top: 50px;
+}
