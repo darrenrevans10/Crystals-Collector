@@ -18,18 +18,19 @@ $(document).ready(function(){
   var wins= 0;
   var losses = 0;
 
+
 $("#wins").text("Wins: " + wins);
 $("#losses").text("Losses: " + losses);
 
 //function to reset the game
 function reset(){
-      $("#random").text("Your goal is: " + random);
-      random=Math.floor(Math.random()*101+19);
-      blue= Math.floor(Math.random()*11+1)
-      green= Math.floor(Math.random()*11+1)
-      red= Math.floor(Math.random()*11+1)
-      yellow= Math.floor(Math.random()*11+1)
+      random= Math.floor(Math.random()*101+19);
+      blue= Math.floor(Math.random()*11+1);
+      green= Math.floor(Math.random()*11+1);
+      red= Math.floor(Math.random()*11+1);
+      yellow= Math.floor(Math.random()*11+1);
       totalScore= 0;
+      $("#random").text("Your goal is: " + random);
       $("#totalScore").text("Your total score is: " + totalScore);
 } 
 //adds the wins to the totalScore
@@ -45,43 +46,43 @@ function loser(){
   reset();
 }
 //sets up click for jewels
-  $("#blue").on ('click', function(){
+  $("#blue").on('click', function(){
     totalScore = totalScore + blue;
     $("#totalScore").text("Your total score is: " + totalScore); 
         if (totalScore === random){
           winner();
         }
-        else if ( totalScore > random){
+        else if (totalScore > random){
           loser();
         }   
   })  
-  $("#green").on ('click', function(){
+  $("#green").on('click', function(){
     totalScore = totalScore + green;
     $("#totalScore").text("Your total score is: " + totalScore);
         if (totalScore === random){
           winner();
         }
-        else if ( totalScore > random){
+        else if (totalScore > random){
           loser();
         } 
   })  
-  $("#red").on ('click', function(){
+  $("#red").on('click', function(){
     totalScore = totalScore + red;
     $("#totalScore").text("Your total score is: " + totalScore);
           if (totalScore == random){
           winner();
         }
-        else if ( totalScore > random){
+        else if (totalScore > random){
           loser();
         } 
   })  
-  $("#yellow").on ('click', function(){
+  $("#yellow").on('click', function(){
     totalScore = totalScore + yellow;
     $("#totalScore").text("Your total score is: " + totalScore);
           if (totalScore == random){
           winner();
         }
-        else if ( totalScore > random){
+        else if (totalScore > random){
           loser();
         }
   });   
