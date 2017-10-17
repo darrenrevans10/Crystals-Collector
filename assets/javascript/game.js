@@ -1,16 +1,16 @@
 
 $(document).ready(function(){
-  var random=Math.floor(Math.random()*101+19)
+  var random=Math.floor(Math.random()*101+19);
   // Selects a random number to be shown at the start of the game
   // Number should be should be between 19 - 120
   //
   $("#random").text("Your goal is: " + random);
   // Appending random number to the randomNumber id in the html doc
   //
-  var blue= Math.floor(Math.random()*11+1)
-  var green= Math.floor(Math.random()*11+1)
-  var red= Math.floor(Math.random()*11+1)
-  var yellow= Math.floor(Math.random()*11+1)
+  var blue= Math.floor(Math.random()*11+1);
+  var green= Math.floor(Math.random()*11+1);
+  var red= Math.floor(Math.random()*11+1);
+  var yellow= Math.floor(Math.random()*11+1);
   // Setting up random numbers for each jewel
   // Random number has to be between 1 - 12
   // 
